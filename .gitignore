@@ -1,0 +1,10 @@
+# Kullanıcı klasörleri ve gereksiz dosyaları hariç tut
+../../../../*
+
+# Gerekli dosyalar ve dizinler dışında her şeyi hariç tut
+!.vscode/
+!src/
+!App.js
+!package.json
+!metro.config.js
+git rm -r --cached .
