@@ -1,10 +1,45 @@
-# Kullanıcı klasörleri ve gereksiz dosyaları hariç tut
-../../../../*
+# Node.js modüllerini hariç tut
+node_modules/
 
-# Gerekli dosyalar ve dizinler dışında her şeyi hariç tut
+# Log dosyalarını hariç tut
+*.log
+
+# Derleme ve geçici dosyalar
+build/
+dist/
+*.tmp
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE ve editör dosyaları
+.vscode/
+.idea/
+*.iml
+
+# Paket yöneticisi dosyaları
+package-lock.json
+yarn.lock
+
+# React Native dosyaları
+android/.gradle/
+android/.idea/
+android/app/build/
+android/build/
+android/local.properties
+android/*.iml
+ios/Pods/
+ios/build/
+ios/*.xcworkspace
+ios/*.xcodeproj
+*.swp
+
+# Sadece belirli dosyaları dahil et
 !.vscode/
 !src/
 !App.js
 !package.json
 !metro.config.js
-git rm -r --cached .
+!README.md
